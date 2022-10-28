@@ -1,11 +1,10 @@
 const express = require('express');
 const path = require('path');
-const fs = require('fs')
-const PORT = 3001
-const app = express()
-const notes = require('./db/db.json')
-const util = require('util')
-const uuid = require('./helpers/uuid')
+const fs = require('fs');
+const PORT = 3001;
+const app = express();
+const util = require('util');
+const uuid = require('./helpers/uuid');
 
 
 app.use(express.urlencoded({ extended: true }));
